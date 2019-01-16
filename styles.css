@@ -1,0 +1,74 @@
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #100e17;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#inputFile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#inputFile + label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background-color: #009ea9;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#inputFile:focus + label,
+#inputFile + label:hover {
+    background-color: #017981;
+}
+
+h1  {
+    margin-top: 60px;
+}
+.video-input {
+    margin-top: 40px;
+}
+
+#loadingText {
+    margin-top: 50px;
+}
+
+#videoElement {
+    background-color: #000;
+}
+
+button {
+    background-color: #009ea9;
+    border: 0;
+    color: #fff;
+    width: 248px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover,
+button:focus {
+    background-color: #017981;
+}
